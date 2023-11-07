@@ -1,0 +1,89 @@
+/* Navbar */
+.navbar {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.navbar-brand {
+    background-color: white;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    padding: 4px 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    border: none !important;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    background-color: white;
+    color: black;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+    font-family: 'PT Sans', sans-serif;
+    margin-right: 20px; /* Spacing between navbar elements */
+}
+
+/* spacing between navbar and name of company */
+.navbar-brand {
+    margin-right: 20px;
+}
+
+.navbar-form {
+    margin-left: 20px;
+}
+
+/* Background image */
+body {
+    background-image: url('images/6213932.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    color: #333;
+}
+
+/* Login box */
+.login-box {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); /* Blur effect */
+    position: relative;
+}
+
+/* Background image to the login box */
+.login-box::before {
+    content: "";
+    background-image: url('images/6213932.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    filter: blur(10px); /* Blur effect */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.login-title {
+    text-transform: uppercase;
+}
+
+.form-text {
+    color: rgb(0, 0, 0);
+}
+
+/* Sign up */
+.signup-message {
+    text-align: center;
+    margin-top: 15px;
+}
